@@ -1,0 +1,311 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* The below code is for the navbar */
+
+.logo a {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+}
+
+.active {
+    color: black;
+    text-decoration: underline;
+}
+
+.navbar li, a {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: lightslategray;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.nav_links {
+    list-style: none;   
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links a {
+    transition: all 0.3 ease 0s;
+}
+
+.nav_links a:hover {
+    color: black;
+}
+
+main {
+    text-align: center;
+}
+
+/* The below code is for the index page */
+
+.home-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: auto;
+    padding: 20vh 0 20px 0;
+}
+
+.text-content {
+    text-align: center;
+    margin-left: 30px;
+}
+
+.headshot {
+    clip-path: circle(50%);
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+}
+
+.text-content p {
+    max-width: 40%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.connect-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.connect-section p {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.icon {
+    margin: 0 10px;
+}
+
+.arrow-down {
+    display: block;
+    margin: 30px auto;
+    width: 25px;
+    height: 25px;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    transform: rotate(-135deg);
+}
+
+.more-tomos {
+    padding: 40vh 0 15vh 0;
+    animation: scrollFade 3s linear both;
+    animation-timeline: view();
+    animation-range: entry 30% cover 50%;
+}
+
+.more-tomos-section {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 60%;
+    margin: 0 auto;
+    padding-bottom: 10vh;
+}
+
+.more-tomos-section h3 {
+    font-family: 'Inter', sans-serif;
+    flex-basis: 20%;
+    margin-right: 50px;
+}
+
+.more-tomos-content {
+    flex-basis: 80%;
+    border-left: 2px rgba(112, 128, 144, .25) solid;
+    padding-left: 40px;
+}
+
+.more-tomos-content p,li {
+    font-family: 'Inter', sans-serif;
+    color:black;
+    font-size: 17px;
+}
+
+.icon-paragraph-pair {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.icon-paragraph-pair iconify-icon, .icon-text-pair p {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.icon-paragraph-pair p {
+    flex-grow: 1;
+    margin: 0; 
+}
+
+
+@keyframes scrollFade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    0% {
+        opacity: 0;
+    }
+}
+
+/* The below code is for the projects & blog page */
+
+.page-heading {
+    font-size: 40px;
+    padding-top: 15vh;
+}
+
+.page-subheading {
+    padding-top: 20px;
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+/* Projects page specific */
+
+.project-list {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    margin: 0 auto;
+}
+
+.project-showcase {
+    position: relative;
+    width: 40%;
+    height: 16vw;
+    display: inline-block;
+    list-style-type: none;
+}
+
+.project-list-img {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.project-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.project-showcase:hover .project-overlay {
+    height: 100%;
+}
+
+.project-list-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Blog page specific */
+
+.post-list {
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    padding-top: 40px;
+}
+
+.post-showcase {
+    display: flex;
+    align-items: flex-start; 
+    width: 70vw;
+    height: 200px; 
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+
+.post-showcase-image {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.post-showcase-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-showcase-text {
+    flex-grow: 1;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.post-list-title, .post-list-description {
+    margin: 0;
+}
+
+.post-showcase-title {
+    color: black;
+    font-size: 20px;
+}
+
+.post-showcase-description {
+    color: slategray;
+    font-size: 16px;
+}

@@ -1,0 +1,22 @@
+---
+layout: base.html
+---
+<h1 class="page-heading">Projects</h1>
+<p class="page-subheading">Much of the work I've done in a professional setting is covered by NDA but in my own time I enjoy stretching my underdstanding and building products to learn more about the different aspects of the product lifecycle. I'll add the different pieces of work I do here as I complete them and am able to share them.</p>
+
+<div class="project-list">
+    <ul>
+        {% for project in collections.project %}
+            <div class="project-showcase">
+                <a href="{{ project.url }}">
+                    <li>
+                        <img src="{{ project.data.coverImage}}" alt="Cover image for {{ project.data.title }} project" class="project-list-img">
+                        <div class="project-overlay">
+                            <div class="project-list-title">{{ project.data.title }}</div>
+                        </div>
+                    </li>
+                </a>
+            </div>
+        {% endfor %}
+    </ul>
+</div>

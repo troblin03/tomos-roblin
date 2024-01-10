@@ -1,0 +1,22 @@
+---
+layout: base.html
+---
+<h1 class="page-heading">Blog</h1>
+<p class="page-subheading">Have a browse through some of the writing I've done on things I am learning.</p>
+<div class="post-list">
+    <ul>
+        {% for blog in collections.blog %}
+                <li>
+                    <div class="post-showcase">
+                        <div class="post-showcase-image">
+                            <img src="{{ blog.data.coverImage}}" alt="Cover image for {{ blog.data.title }} project" class="post-list-img">
+                        </div>
+                        <div class="post-showcase-text">
+                            <h2><a href="{{ blog.url }}" class="post-showcase-title">{{ blog.data.title }}</a></h2>
+                            <p class="post-showcase-description">{{ blog.data.description }}</p>
+                        </div>
+                    </div>
+                </li>
+        {% endfor %}
+    </ul>
+</div>
