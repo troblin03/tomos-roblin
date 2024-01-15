@@ -17,9 +17,13 @@
                 </ul>
             </nav>
         </header>
-        <main>
-            <p>Project 1 content.</p>
-
+        <main class="post">
+            <div class="post-heading-container">
+                <div class="image-background" style="background-image: url('{{ coverImage }}');"></div>
+                <div class="overlay"></div>
+                <h1 class="project-post-title">{{ title }}</h1>
+            </div>
+            {{ content }}
         </main>
     </body>
 </html>
