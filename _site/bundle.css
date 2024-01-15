@@ -363,6 +363,10 @@ p {
     font-size: 26px;
 }
 
+.post-icon {
+    margin-bottom: 20px;
+}
+
 .post h2,h3,h4 {
     text-align: left;
     font-family: 'Inter', sans-serif;

@@ -1,8 +1,8 @@
 ---
 title: Project 1 - This Website
 coverImage: /images/project1.jpeg
+gitHub: https://github.com/troblin03/tomos-roblin
 ---
-
 It has always been a dream of mine to build my own website. I transitioned from an engineering degree into the corporate world, before shifting my focus to something in between - Digital Products. I landed at this half way point because I want to combine my soft and hard skills. Whilst in a more corporate role, I found myself wanting to build (my engineering instincts rearing their head). Building a website to document my attempts at balancing these instincts is something I have always wanted to do and in 2024, I have set out to do exactly that.
 ## The Why
 Anyone that’s known me in a professional setting will know that I’ve been harping on about becoming ‘more technical’.  The problem is, my progression in a corporate setting is further along than my technical understanding. This left me at a crossroads. Do I take a step backwards to focus on more fundamental technical skills? Or do I go all in on being a corporate consultant and become oblivious to the implementation of technology strategy I may be setting? In all honestly, neither of these options seem appealing to me so I am choosing a third option. Picking up my technical skillset in my own time to help me eventually transition into roles with more technical exposure. I’m not talking about becoming an engineering manager and shipping production ready code, it’s more about becoming T-shaped, finding the intersection between business and technology. 
